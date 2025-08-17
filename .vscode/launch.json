@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach to Plugin",
+      "type": "node",
+      "request": "attach",
+      "processId": "${command:PickProcess}",
+      "outFiles": ["${workspaceFolder}/bin/**/*.js"],
+      "resolveSourceMapLocations": ["${workspaceFolder}/**"]
+    }
+  ]
+}

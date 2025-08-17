@@ -1,0 +1,110 @@
+{
+  "Name": "Tessie (Unofficial)",
+  "Version": "0.1.0.0",
+  "Author": "infernal.dev",
+  "Actions": [
+    {
+      "Name": "Toggle Climate",
+      "UUID": "dev.infernal.tessie.climate",
+      "Icon": "imgs/actions/counter/icon",
+      "Tooltip": "Toggle climate in your vehicle.",
+      "PropertyInspectorPath": "ui/climate.html",
+      "Controllers": ["Keypad"],
+      "DisableAutomaticStates": true,
+      "States": [
+        {
+          "Image": "imgs/actions/counter/key",
+          "TitleAlignment": "middle",
+          "Name": "Start Climate",
+          "Title": "Start\nClimate"
+        },
+        {
+          "Image": "imgs/actions/counter/key",
+          "TitleAlignment": "middle",
+          "Name": "Stop Climate",
+          "Title": "Stop\nClimate"
+        }
+      ]
+    },
+    {
+      "Name": "Battery Status",
+      "UUID": "dev.infernal.tessie.battery",
+      "Icon": "imgs/actions/counter/icon",
+      "Tooltip": "View your vehicle's battery status.",
+      "PropertyInspectorPath": "ui/battery.html",
+      "Controllers": ["Keypad"],
+      "States": [
+        {
+          "Image": "imgs/actions/counter/key",
+          "TitleAlignment": "middle"
+        }
+      ]
+    },
+    {
+      "Name": "Battery Health",
+      "UUID": "dev.infernal.tessie.battery-health-measurements",
+      "Icon": "imgs/actions/counter/icon",
+      "Tooltip": "View your vehicle's battery health.",
+      "PropertyInspectorPath": "ui/battery-health-measurements.html",
+      "Controllers": ["Keypad"],
+      "States": [
+        {
+          "Image": "imgs/actions/counter/key",
+          "TitleAlignment": "middle"
+        }
+      ]
+    },
+    {
+      "Name": "Location",
+      "UUID": "dev.infernal.tessie.location",
+      "Icon": "imgs/actions/counter/icon",
+      "Tooltip": "View your vehicle's location.",
+      "PropertyInspectorPath": "ui/location.html",
+      "Controllers": ["Keypad"],
+      "States": [
+        {
+          "Image": "imgs/actions/counter/key",
+          "TitleAlignment": "middle"
+        }
+      ]
+    },
+    {
+      "Name": "Tire Pressure",
+      "UUID": "dev.infernal.tessie.tire-pressure",
+      "Icon": "imgs/actions/counter/icon",
+      "Tooltip": "View your vehicle's tire pressure.",
+      "PropertyInspectorPath": "ui/tire-pressure.html",
+      "Controllers": ["Keypad"],
+      "States": [
+        {
+          "Image": "imgs/actions/counter/key",
+          "TitleAlignment": "middle"
+        }
+      ]
+    }
+  ],
+  "Category": "Tessie (Unofficial)",
+  "CategoryIcon": "imgs/plugin/category-icon",
+  "CodePath": "bin/plugin.js",
+  "Description": "Control your Tesla via Tessie directly from your StreamDeck.",
+  "Icon": "imgs/plugin/marketplace",
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "6.5"
+  },
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "12"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Nodejs": {
+    "Version": "20",
+    "Debug": "enabled"
+  },
+  "UUID": "dev.infernal.tessie"
+}

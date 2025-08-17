@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head lang="en">
+    <title>Location</title>
+    <meta charset="utf-8" />
+    <script src="sdpi-components.js"></script>
+  </head>
+  <body>
+    <sdpi-item label="Tessie Access Token">
+      <sdpi-password
+        global
+        setting="tessieAccessToken"
+        required
+      ></sdpi-password>
+    </sdpi-item>
+    <sdpi-item label="Vehicle">
+      <sdpi-select
+        setting="vin"
+        datasource="getVehicles"
+        loading="Fetching your vehicles..."
+        placeholder="Select your vehicle"
+      ></sdpi-select>
+    </sdpi-item>
+  </body>
+</html>
