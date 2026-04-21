@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@elgato/streamdeck": "^1.0.0",
-    "axios": "^1.11.0",
+    "axios": "^1.12.0",
     "zod": "^4.0.17"
   }
 }
